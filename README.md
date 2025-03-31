@@ -1,48 +1,69 @@
+# 大富翁遊戲
 
-# Monopoly112
+## 簡介
 
-這個專案是一款類似大富翁的遊戲。請按照以下步驟設置並開始遊玩。
+這是一款基於網頁的多人遊玩大富翁遊戲，支援擲骰子、移動、購買土地等基本功能。
 
-## 1. 克隆儲存庫
+## 安裝與運行
 
-首先，將儲存庫克隆到本地機器：
-
-```bash
+### 1. 克隆專案
+```sh
 git clone https://github.com/github-world192/monopoly112
 ```
 
-## 2. 啟動伺服器
+### 2. 啟動伺服器
+由於本地開啟 `html/game.html` 可能無法載入圖片與資源，因此需要透過 HTTP 伺服器啟動。
 
-為了正確載入遊戲（因為圖片可能無法直接載入），請按照以下步驟操作：
+```sh
+cd monopoly112
+python3 -m http.server 8000
+```
 
-1. 進入專案目錄：
+### 3. 在瀏覽器中開啟
+在瀏覽器輸入：
+```
+http://localhost:8000/html/game.html
+```
 
-    ```bash
-    cd monopoly112
-    ```
+### 4. 手機模擬測試
+在 Chrome 或 Edge 開啟開發者工具：
+- Windows: `Ctrl + Shift + I`
+- Mac: `Cmd + Option + I`
 
-2. 啟動一個簡單的 HTTP 伺服器：
+點擊右上角的 **手機模擬** 圖示，即可模擬手機環境測試遊戲。
 
-    ```bash
-    python3 -m http.server 8000
-    ```
+## 遊戲功能改動
+1. 增加遊戲出場畫面及背景音樂。
+2. 增加遊戲過程中的背景圖片與音樂。
+3. 玩家移動時，顯示當前所在的位置。
+4. 骰子擲出時播放擲骰子的音效。
 
-3. 打開瀏覽器並前往：
+## 專案架構
+```
+│  BuyLandServlet.java
+│  Game.java
+│  GameServlet.java
+│  Lands.java
+│  Monopoly.java
+│  pom.xml
+│
+├─html 載入 JS
+│      game.html
+│      intro.html
+│
+├─images 圖片資源
+│      background.jpg
+│      logo.jpg
+│
+├─js
+│      game.js 遊戲主程序
+│      intro.js 初始畫面
+│
+└─sound_effects 音效資源
+        dice_rolling.mp3
+        game_bgm.mp3
+        intro_sound.mp3
+```
 
-    ```
-    http://localhost:8000/html/intro.html
-    ```
-
-## 3. 在桌面上模擬手機瀏覽(老師要求)
-
-若要在桌面上模擬手機查看遊戲，請按照以下步驟操作：
-
-1. 打開瀏覽器的開發者工具：
-    - 在 Windows 上：按 `Ctrl + Shift + I`
-    - 在 Mac 上：按 `Cmd + Option + I`
-
-2. 開發者工具開啟後，點擊 **右方的手機圖示**，這樣就可以模擬手機瀏覽器，查看遊戲在手機上的顯示效果。
-
-## 授權
-
-您可以自由修改並使用此遊戲。
+## 相關影片
+[![遊戲演示](https://img.youtube.com/vi/weRO096sJI4/0.jpg)](https://www.youtube.com/watch?v=weRO096sJI4)
