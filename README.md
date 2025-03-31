@@ -11,8 +11,8 @@
 git clone https://github.com/github-world192/monopoly112
 ```
 
-### 2. 啟動伺服器
-由於本地開啟 `html/game.html` 可能無法載入圖片與資源，因此需要透過 HTTP 伺服器啟動。
+### 2. 啟動伺服器(必須)
+由於本地開啟 `html/game.html` 可能無法載入圖片與資源，因此需要執行以下指令。
 
 ```sh
 cd monopoly112
@@ -22,7 +22,7 @@ python3 -m http.server 8000
 ### 3. 在瀏覽器中開啟
 在瀏覽器輸入：
 ```
-http://localhost:8000/html/game.html
+http://localhost:8000/html/intro.html
 ```
 
 ### 4. 手機模擬測試
@@ -30,13 +30,13 @@ http://localhost:8000/html/game.html
 - Windows: `Ctrl + Shift + I`
 - Mac: `Cmd + Option + I`
 
-點擊右上角的 **手機模擬** 圖示，即可模擬手機環境測試遊戲。
+點擊右邊的 **手機模擬** 圖示，即可模擬手機環境測試遊戲。
 
 ## 遊戲功能改動
 1. 增加遊戲出場畫面及背景音樂。
 2. 增加遊戲過程中的背景圖片與音樂。
 3. 玩家移動時，顯示當前所在的位置。
-4. 骰子擲出時播放擲骰子的音效。
+4. 骰子音效(未完成)。
 
 ## 專案架構
 ```
