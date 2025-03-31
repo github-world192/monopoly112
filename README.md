@@ -25,7 +25,7 @@ python3 -m http.server 8000
 http://localhost:8000/html/intro.html
 ```
 
-### 4. 手機模擬測試
+### 4. 手機模擬測試(老師要求)
 在 Chrome 或 Edge 開啟開發者工具：
 - Windows: `Ctrl + Shift + I`
 - Mac: `Cmd + Option + I`
