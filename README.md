@@ -30,10 +30,10 @@ git clone https://github.com/github-world192/monopoly112
 3. 打開瀏覽器並前往：
 
     ```
-    http://localhost:8000/html/game.html
+    http://localhost:8000/html/intro.html
     ```
 
-## 3. 在桌面上模擬手機瀏覽（可選）
+## 3. 在桌面上模擬手機瀏覽(老師要求)
 
 若要在桌面上模擬手機查看遊戲，請按照以下步驟操作：
 
@@ -41,7 +41,7 @@ git clone https://github.com/github-world192/monopoly112
     - 在 Windows 上：按 `Ctrl + Shift + I`
     - 在 Mac 上：按 `Cmd + Option + I`
 
-2. 開發者工具開啟後，點擊 **右上角的手機圖示**，這樣就可以模擬手機瀏覽器，查看遊戲在手機上的顯示效果。
+2. 開發者工具開啟後，點擊 **右方的手機圖示**，這樣就可以模擬手機瀏覽器，查看遊戲在手機上的顯示效果。
 
 ## 授權
 
