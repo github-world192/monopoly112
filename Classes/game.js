@@ -1,9 +1,11 @@
-me.js
 import Dice from "./Dice.js";
 import Player from "./Player.js";
 import Board from "./Board.js";
 
+
+
 class Game {
+
   constructor() {
     this.dice = new Dice();
     this.players = [];

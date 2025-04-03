@@ -16,24 +16,3 @@
     }
   }
   
-  // game.js
-  import Dice from "./Dice.js";
-  import Player from "./Player.js";
-  
-  let dice = new Dice();
-  let players = [];
-  
-  function setup() {
-    createCanvas(windowWidth, windowHeight);
-    for (let i = 0; i < 4; i++) {
-      players.push(new Player(0, color(random(100, 255), random(100, 255), random(100, 255))));
-    }
-  }
-  
-  function draw() {
-    background(255);
-    dice.update();
-    dice.draw(width / 2, height / 2);
-    players.forEach(player => player.draw(path, cellSize));
-  }
-  
